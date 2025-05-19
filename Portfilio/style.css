@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, white, rgb(160, 192, 202), rgb(107, 127, 136))
+    color: blue;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: larger;
+}
+ nav {
+    background-color: #e0f0e8;
+    padding: 15px 20 px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+ }
+
+.navbar-container {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 12px 20px;
+    max-width: 1000px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25p;
+
+}
+
+.nav-links li a {
+    color: rgb(94, 179, 185);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
+
+    color: #f39c12;
+    background-color: #2c3e50;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(225, 211, 105, 0.2);
+}
+.nav-links {
+    display: flex !important;
+}
+
+header h1 {
+
+    font-size: 36px;
+    color: rgb(100, 139, 163);
+    margin-bottom: 20px;
+
+}
+
+.content {
+    background-color: rgb(88, 102, 119);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#Skills {
+    font-size: larger;
+    color: rgb(100, 139, 163);
+}
+
+.content a {
+     color: rgb(100, 139, 163);
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.skills-list li{
+
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transfrom 0.2s ease , box-shadow 0.2s ease;
+}
+
+.skills-list li:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.my-image {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transfrom 0.3 ease;
+    display: block;
+    margin: 20px auto;
+}
+
+.my-image hover: {
+
+    transfrom: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: linear-gradient( blue);
+    padding: 20px 0;
+    color: black
+    text-align: center;
+    font-family:'Segoe UI';
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+
+.footer-container {
+
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: cneter;
+}
+
+.footer-link {
+    color: wheat;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: aquamarine;
+}
